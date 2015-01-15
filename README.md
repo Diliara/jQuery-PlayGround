@@ -1,2 +1,4 @@
-# AJAX_practice
-Codeschool AJAX
+# jQuery Practice
+with Codeschool
+____________
+1. AJAX
