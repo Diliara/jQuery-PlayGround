@@ -49,3 +49,4 @@ _site/
 # IntelliJ #
 ############
 .idea
+*.iml
