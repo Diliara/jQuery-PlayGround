@@ -97,19 +97,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.vacation {
+ }
 
+.centered {
+    text-align: center;
 
+    /* for images */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.bg {
+    background-color: #3C3C3C;
+}
 
-
-
-
-
-
-
-
-
-
+.bg h2 {
+    color: white;
+}
 
 
 
@@ -225,9 +231,9 @@ textarea {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -260,7 +266,6 @@ textarea {
     /*
      * Don't show links for images, or javascript/internal links
      */
-
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
