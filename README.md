@@ -1,4 +1,4 @@
-# jQuery PlayGround
-with Codeschool
+# jQuery PlayGround & Sample Project
 ____________
-1. AJAX
+
+1. Selection and Traversal
