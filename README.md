@@ -36,6 +36,8 @@ Functions for finding content in the document and nagivating among the contents 
 	1. **`.find(selector)`** - get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
 	
 			$('ul li') => $('ul').find('li');
+
+	1. **`.closest(selector)`** - get the first ancestor element that matches the selector, beginning at the current element and walking *up* through the DOM.
 	
 	1. **`.first()`**			
 		
@@ -46,7 +48,6 @@ Functions for finding content in the document and nagivating among the contents 
 			Selects second li:
 	
 			$('li').first().next();
-
 	
 ###2. Core Functionality:
 
@@ -57,6 +58,11 @@ Implements core jQuery functions as well as commonly used utilities.
 	 	HTML: <li data-price> </li>
 	 	
 	 	JS: .data('price');
+
+###3. **Events**
+
+
+###4. **Effects**
 	 	
 	 	
 

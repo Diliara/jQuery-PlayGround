@@ -117,7 +117,31 @@ textarea {
     color: white;
 }
 
+#filters {
+    padding-bottom: 1em;
 
+}
+
+.highlighted {
+    color: rgba(252, 35, 43, 0.60);
+
+}
+
+.details {
+    margin-top: 1em;
+    display: none;
+
+}
+
+.quantity {
+    width: 80%;
+}
+
+.price {
+    font-style: italic;
+    padding-top: 1em;
+
+}
 
 /* ==========================================================================
    Helper classes
