@@ -1,10 +1,20 @@
-# jQuery PlayGround
+## jQuery PlayGround
 
-## Selection and Traversal
+Related Links
+
+1. [jQuery-PlayGroud on GitHub pages](http://diliara.github.io/jQuery-PlayGround/)
+1. [jQuery API Documentation] (http://api.jquery.com/)
+
+
+
+## Refresher
+
+
+### Selection and Traversal
 
 Functions for finding content in the document and navigating among the contents of the document.
 	
-### Selectors
+#### Selectors
 
 1. **Multiple Selectors** - selects multiple selectors. Ex:
 	
@@ -19,7 +29,7 @@ Functions for finding content in the document and navigating among the contents 
 		$('ul li')
 		
 		
-### Filter Selectors
+#### Filter Selectors
 
 1. **`:even`** - select even elements, **zero-indexed**. In ex, selects the **first** and every other after that (#0, #2, #4...):
 	
@@ -34,7 +44,7 @@ Functions for finding content in the document and navigating among the contents 
 		$('ul li:last')
 
 
-### Traversing the DOM
+#### Traversing the DOM
 
 1. **`.find('selector')`** - walks **down** the DOM to get specified descendants filtered by a selector, jQuery object, or element.
 	
@@ -62,7 +72,7 @@ Functions for finding content in the document and navigating among the contents 
 	    $(this).closest('.someClass');
 
 
-## Manipulation and CSS
+### Manipulation and CSS
 
 Functions for editing and changing document content and working with CSS
 
@@ -80,17 +90,17 @@ Functions for editing and changing document content and working with CSS
 
 
 
-## Events
+### Events
 
 
-## Effects
+### Effects
 
 
-## AJAX
+### AJAX
 
 	 	
 	 	
-## Data Storage
+### Data Storage
 
 1. **`.data(obj)`** - store data associated with the matched elements. Ex:
 
