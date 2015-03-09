@@ -1,7 +1,5 @@
 ## jQuery PlayGround
 
-Related Links
-
 1. [jQuery-PlayGroud on GitHub pages](http://diliara.github.io/jQuery-PlayGround/)
 1. [jQuery API Documentation] (http://api.jquery.com/)
 
@@ -71,7 +69,11 @@ Functions for finding content in the document and navigating among the contents 
 
 	    $(this).closest('.someClass');
 	    
-1. [** `.filter()`**](http://api.jquery.com/filter/)
+	    
+	    
+#### [Filtering](http://api.jquery.com/category/traversing/filtering/)   
+	    
+1. [**`.filter()`**](http://api.jquery.com/filter/)
 
 		Example
 		---------
@@ -89,8 +91,7 @@ Functions for finding content in the document and navigating among the contents 
     			);
 
 
-	    
-	    
+1. **`.not()`**    
 	    
 
 
@@ -114,12 +115,14 @@ Functions for editing and changing document content and working with CSS
 1. **`.before(<element>)`** & **`.insertBefore(<element>)`** - way to add a node **before**. (different order of syntax)
 
 
+
+
 1. **`.addClass(<class>)`**, **`.removeClass(<class>)`** and **`.toggleClass(<class>)`**
 
+1. [**`.hasClass(<class>)`**](http://api.jquery.com/hasclass/) 
 
 
 
-1. [**`.hasClass()`**](http://api.jquery.com/hasclass/) 
 
 1. [**`.val()`**](http://api.jquery.com/val/)
 
@@ -209,10 +212,6 @@ Functions for editing and changing document content and working with CSS
 
 
 
-### AJAX
-
-
-
 ### PROPERTIES
 
 1. [**`.length`**](http://api.jquery.com/length/) - number of elements in jQuery object.
@@ -220,3 +219,6 @@ Functions for editing and changing document content and working with CSS
 		JS: 	console.log($('button').length);
 		
 		Outputs number of buttons on the page
+		
+		
+### AJAX
