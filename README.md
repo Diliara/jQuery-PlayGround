@@ -94,7 +94,7 @@ Functions for finding content in the document and navigating among the contents 
 	    
 
 
-### Manipulation and CSS
+### Manipulation and [CSS](http://api.jquery.com/category/css/)
 
 Functions for editing and changing document content and working with CSS
 
@@ -114,27 +114,109 @@ Functions for editing and changing document content and working with CSS
 1. **`.before(<element>)`** & **`.insertBefore(<element>)`** - way to add a node **before**. (different order of syntax)
 
 
-1. **`.addClass(<class>)`** & **`.removeClass(<class>)`**
+1. **`.addClass(<class>)`**, **`.removeClass(<class>)`** and **`.toggleClass(<class>)`**
 
 
-### Events
 
 
-### Effects
+1. [**`.hasClass()`**](http://api.jquery.com/hasclass/) 
+
+1. [**`.val()`**](http://api.jquery.com/val/)
 
 
-### AJAX
 
-	 	
-	 	
-### Data Storage
+### [Events](http://api.jquery.com/category/events/)
 
-1. **`.data(obj)`** - store data associated with the matched elements. Ex:
+1. **`.click()`**
+
+1. **`.on()`** -
+
+
+        $('.quantity').on('keyup', function () {
+           var price = +$(this).closest('.vacation').data('price')
+           var quantity = +$(this).val();
+           var total = $(this).closest('.vacation').find('.total');
+           $(total).text(price * quantity);
+        });
+
+	Note: Use + (plus) to convert string to a number
+
+1. **`.keyup()`**
+
+
+1. [**`event.preventDefault()`**](http://api.jquery.com/event.preventdefault/) - prevents default action of the event. For example, if there is a js event on `<a href="#"></a>`, we can use preventDefault to prevent browser action on `href="#"`
+
+		HTML: 	<a href="#">More Details</a>
+
+
+		JS:		$(".show-hide-btn").on('click', showDetails)
+
+				function showDetails(evt) {
+    				evt.preventDefault();
+    				...
+				}
+
+
+
+
+
+
+### [Effects](http://api.jquery.com/category/effects/)
+
+1. **`.slideDown()`**, **`.slideUp()`**, and **`.slideToggle()`**
 
 		Example
 		---------
 
-	 	HTML: <li data-price> </li>
+		HTML:   <div>
+		            <p class="show-hide-btn"><a>More Details</a></p>
+                    <div class="details">
+                        <p>Some details here</p>
+                    </div>
+                </div>
 
-	 	JS: .data('price');
+        JS:     $(".show-hide-btn").click(function () {
+                    $(this).siblings().not(".show-hide-btn").slideToggle();
+                });
 
+
+1. **`.fadeIn()`**, **`.fadeOut()`**, and **`.fadeToggle()`**
+
+
+
+### [Utilities](http://api.jquery.com/category/utilities/)
+
+1. **`.each()`**
+
+
+		Example
+		---------
+
+		HTML:  ...<p class="price">$<span class="price-amount">0</span> / ticket</p>...
+
+        JS:     $('.price-amount').each(function () {
+                    var priceAmount = $(this).closest('.vacation').data('price');
+                    $(this).text(priceAmount);
+                })
+
+
+1. **`.data(obj)`** - store data associated with the matched elements.
+
+		Example
+		---------
+
+	 	HTML:   <div class="vacation" data-price="1845">...
+
+
+
+### AJAX
+
+
+
+### PROPERTIES
+
+1. [**`.length`**](http://api.jquery.com/length/) - number of elements in jQuery object.
+
+		JS: 	console.log($('button').length);
+		
+		Outputs number of buttons on the page
