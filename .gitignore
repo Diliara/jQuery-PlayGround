@@ -50,3 +50,5 @@ _site/
 ############
 .idea
 *.iml
+
+.ignore

@@ -137,6 +137,10 @@ textarea {
 
 }
 
+.map-here {
+    display: none;
+}
+
 a {
 cursor: pointer;
 

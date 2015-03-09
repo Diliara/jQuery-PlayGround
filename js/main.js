@@ -25,6 +25,15 @@ $(document).ready(function () {
 
     $(".show-hide-btn").on('click', showDetails)
 
+    $('.see-map').on('click', function () {
+        $.ajax('flight-info.html', {
+            success: function (response) {
+                $('.map-here').html(response).slideToggle();
+            },
+            data: {'loc': 1}
+        });
+    });
+
 });
 
 
