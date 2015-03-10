@@ -221,4 +221,33 @@ Functions for editing and changing document content and working with CSS
 		Outputs number of buttons on the page
 		
 		
-### AJAX
+### [AJAX](http://api.jquery.com/jquery.ajax/)
+
+**A**synchronous **J**avaSCript **A**nd **X**ML
+
+A client side method for communicating with a web server
+
+**`$.ajax(url[, settings])`**
+
+
+		Example
+		---------
+
+        JS:      $('.see-map').on('click', function () {
+         			$.ajax('flight-info.html', {
+            			success: function (response) {
+                			$('.map-here').html(response).slideToggle();
+            			}
+        			});
+  				 });
+
+
+**`$.get(url, success)`**
+
+
+        JS:      $('.see-map').on('click', function () {
+         			$.get('flight-info.html', function(response) {
+         				$('.map-here').html(response).slideToggle();        					});
+  				 });
+  				
+   				 
