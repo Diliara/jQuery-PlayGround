@@ -1,11 +1,15 @@
 ## jQuery PlayGround
 
 1. [jQuery-PlayGroud on GitHub pages](http://diliara.github.io/jQuery-PlayGround/)
-1. [jQuery API Documentation] (http://api.jquery.com/)
+1. [jQuery API Documentation](http://api.jquery.com/)
+2. [jQuery Learning Center](http://learn.jquery.com/)
 
 
 
 ## Refresher
+
+
+Use `jQuery.` or `$.` to refer to jQuery library
 
 
 ### Selection and Traversal
@@ -187,10 +191,18 @@ Functions for editing and changing document content and working with CSS
 
 
 
-### [Utilities](http://api.jquery.com/category/utilities/)
+### [PROPERTIES](http://api.jquery.com/category/properties/)
 
-1. **`.each()`**
+1. [**`.length`**](http://api.jquery.com/length/) - number of elements in jQuery object.
 
+		JS: 	console.log($('button').length);
+		
+		Outputs number of buttons on the page
+		
+		
+### [Miscellaneous](http://api.jquery.com/category/miscellaneous/)
+
+1. **`.each()`** - jQuery Object Method
 
 		Example
 		---------
@@ -203,22 +215,16 @@ Functions for editing and changing document content and working with CSS
                 })
 
 
-1. **`.data(obj)`** - store data associated with the matched elements.
+1. **`.data()`** - store data associated with the matched elements.
 
-		Example
+		Example (refer to the ex above -^)
 		---------
 
 	 	HTML:   <div class="vacation" data-price="1845">...
+	 	
+	 	JS: 	...$(this).closest('.vacation').data('price')...
 
-
-
-### PROPERTIES
-
-1. [**`.length`**](http://api.jquery.com/length/) - number of elements in jQuery object.
-
-		JS: 	console.log($('button').length);
 		
-		Outputs number of buttons on the page
 		
 		
 ### [AJAX](http://api.jquery.com/jquery.ajax/)
@@ -251,3 +257,8 @@ A client side method for communicating with a web server
   				 });
   				
    				 
+### [Utility Methods](http://api.jquery.com/category/utilities/)
+
+1. [**`$.each()`**](http://api.jquery.com/jQuery.each/)
+
+1. [**`$.map()`**](http://api.jquery.com/jQuery.map/)
