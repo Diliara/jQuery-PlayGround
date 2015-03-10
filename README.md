@@ -223,7 +223,7 @@ Functions for editing and changing document content and working with CSS
 		
 ### [AJAX](http://api.jquery.com/jquery.ajax/)
 
-**A**synchronous **J**avaSCript **A**nd **X**ML
+**A**synchronous **J**avaScript **A**nd **X**ML
 
 A client side method for communicating with a web server
 
@@ -244,10 +244,10 @@ A client side method for communicating with a web server
 
 **`$.get(url, success)`**
 
-
         JS:      $('.see-map').on('click', function () {
          			$.get('flight-info.html', function(response) {
-         				$('.map-here').html(response).slideToggle();        					});
+         				$('.map-here').html(response).slideToggle();
+         			});
   				 });
   				
    				 
