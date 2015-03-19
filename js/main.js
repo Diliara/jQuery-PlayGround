@@ -1,3 +1,8 @@
+function showDetails(evt) {
+    evt.preventDefault();
+    $(this).siblings().not(".show-hide-btn").slideToggle();
+}
+
 $(document).ready(function () {
 
     /* fetching price from data-price */
@@ -16,7 +21,7 @@ $(document).ready(function () {
 
 
     /* Random filter */
-    $(".filter").click(function () {
+    $(".filter").on('click', function () {
         var by = $(this).data('filter');
         $('.highlighted').removeClass('highlighted');
         $('.vacation').filter(by).addClass('highlighted');
@@ -38,7 +43,3 @@ $(document).ready(function () {
 });
 
 
-function showDetails(evt) {
-    evt.preventDefault();
-    $(this).siblings().not(".show-hide-btn").slideToggle();
-}

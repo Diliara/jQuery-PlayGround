@@ -262,3 +262,5 @@ A client side method for communicating with a web server
 1. [**`$.each()`**](http://api.jquery.com/jQuery.each/)
 
 1. [**`$.map()`**](http://api.jquery.com/jQuery.map/)
+
+1. [**`$.extend()`**](http://api.jquery.com/jQuery.extend/)
