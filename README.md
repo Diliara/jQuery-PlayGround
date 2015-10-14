@@ -54,7 +54,7 @@ Functions for finding content in the document and navigating among the contents 
 
 1. **`.children()`** - walks **down** the DOM to get specified DIRECT descendants ONLY
 
-1. **`.find('selector')`** - walks **down** the DOM to get specified descendants filtered by a selector, jQuery object, or element.
+1. **`.find()`** - walks **down** the DOM to get specified descendants (filtered by a selector, jQuery object, or element)
 	
 		$('ul li') => $('ul').find('li');
 		
@@ -73,7 +73,7 @@ Functions for finding content in the document and navigating among the contents 
 		$('li').first().next();
 
 
-1. **`.closest('selector')`** - walks **up** the DOM to get first ancestor with specified selector.
+1. **`.closest()`** - walks **up** the DOM to get first ancestor (with specified selector)
 
 	    $(this).closest('.someClass');
 	    
