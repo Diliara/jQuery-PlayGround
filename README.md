@@ -46,11 +46,19 @@ Functions for finding content in the document and navigating among the contents 
 		$('ul li:last')
 
 
-#### Traversing the DOM
+#### [Traversing the DOM](http://api.jquery.com/category/traversing/)
+
+1. [**`.parent()`**](http://api.jquery.com/parent/) - get the direct parent
+
+1. [**`.parents()`**](http://api.jquery.com/parents/) - get the **ancestors**
+
+1. **`.children()`** - walks **down** the DOM to get specified DIRECT descendants ONLY
 
 1. **`.find('selector')`** - walks **down** the DOM to get specified descendants filtered by a selector, jQuery object, or element.
 	
 		$('ul li') => $('ul').find('li');
+		
+1. [**`.siblings()`**](http://api.jquery.com/siblings/)
 
 1. **`.first()`**
 
@@ -64,10 +72,6 @@ Functions for finding content in the document and navigating among the contents 
 
 		$('li').first().next();
 
-
-1. **`.parent()`**
-
-1. **`.children()`** - walks **down** the DOM to get specified DIRECT descendants ONLY
 
 1. **`.closest('selector')`** - walks **up** the DOM to get first ancestor with specified selector.
 
