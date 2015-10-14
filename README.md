@@ -107,7 +107,7 @@ Functions for finding content in the document and navigating among the contents 
 
 Functions for editing and changing document content and working with CSS
 
-1. **`.append(<element>)`** & **`.appendTo(<element>)`** - way to add a node as a **last child**. (different order of syntax)
+1. **`.append()`** & **`.appendTo()`** - way to add a node as a **last child**. (different order of syntax)
 
 		Example
 		---------
@@ -116,20 +116,15 @@ Functions for editing and changing document content and working with CSS
 
     	$($('<p>Hello</p>')).appendTo(this);
 
-1. **`.prepend(<element>)`** & **`.prependTo(<element>)`** - ways to add a node as a **first child**. (different order of syntax)
+1. **`.prepend()`** & **`.prependTo()`** - ways to add a node as a **first child**. (different order of syntax)
 
-1. **`.after(<element>)`** & **`.insertAfter(<element>)`** - way to add a node **after**. (different order of syntax)
+1. **`.after()`** & **`.insertAfter()`** - way to add a node **after**. (different order of syntax)
 
-1. **`.before(<element>)`** & **`.insertBefore(<element>)`** - way to add a node **before**. (different order of syntax)
+1. **`.before()`** & **`.insertBefore()`** - way to add a node **before**. (different order of syntax)
 
+1. **`.addClass()`**, **`.removeClass()`** and [**`.toggleclass()`**](http://api.jquery.com/toggleclass/)
 
-
-
-1. **`.addClass(<class>)`**, **`.removeClass(<class>)`** and **`.toggleClass(<class>)`**
-
-1. [**`.hasClass(<class>)`**](http://api.jquery.com/hasclass/) 
-
-
+1. [**`.hasClass()`**](http://api.jquery.com/hasclass/)
 
 
 1. [**`.val()`**](http://api.jquery.com/val/)
